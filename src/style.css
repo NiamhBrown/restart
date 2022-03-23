@@ -3,7 +3,7 @@ color: #80858A;
 }
 ul {
     
-    padding: 0;
+    padding-left: 0px;
     margin: 0;
 }
 
@@ -30,4 +30,12 @@ li {
 .credit-link:hover {
 color:pink;
 text-decoration: underline;
+}
+
+.main-info {
+    padding-left: 0px;
+}
+
+#description {
+    text-transform: capitalize;
 }
