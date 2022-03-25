@@ -13,6 +13,9 @@ li {
     margin: 0;
     
 }
+li::first-letter {
+    text-transform: capitalize;
+}
 
 .app-container {
     border: 1px solid #80858A;
@@ -34,8 +37,4 @@ text-decoration: underline;
 
 .main-info {
     padding-left: 0px;
-}
-
-#description {
-    text-transform: capitalize;
 }
