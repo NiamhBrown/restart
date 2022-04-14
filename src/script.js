@@ -24,8 +24,9 @@ function displayInfo(response) {
     let humidityElement = document.querySelector("#humidity");
     let dateElement = document.querySelector("#date");
   
+    celsiusTemp = response.data.main.temp
     cityElement.innerHTML = response.data.name;
-    temperatureElement.innerHTML = Math.round(response.data.main.temp);
+    temperatureElement.innerHTML = Math.round(celsiusTemp);
     descriptionElement.innerHTML = response.data.weather[0].description;
     windElement.innerHTML = Math.round(response.data.wind.speed);
     humidityElement.innerHTML = response.data.main.humidity;
@@ -36,6 +37,20 @@ function displayInfo(response) {
     let icon = response.data.weather[0].icon;
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
     iconElement.setAttribute("alt", response.data.weather[0].description);
+}
+
+function displayFahrenheitTemp(event){
+    event.preventDefault();
+    let fahrenheitTemp = (celsiusTemp*9)/ 5+32;
+    let temperatureElement = document.querySelector("#temperature");
+    temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+function displaycelsiusTemp(event){
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#temperature");
+    temperatureElement.innerHTML = Math.round(celsiusTemp);
+    
 }
 
 function handleSubmit(event) {
@@ -53,4 +68,12 @@ axios.get(apiUrl).then(displayInfo);
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("North pole");
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displaycelsiusTemp);
+
+let celsiusTemp = null;
+
+search("Brighton");
