@@ -38,8 +38,19 @@ function displayInfo(response) {
     iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "e4c991b27b566dc4b5b311b6f8d9ac5c";
-let cityName = "Brighton"
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+function handleSubmit(event) {
+event.preventDefault();
+let cityInputElement = document.querySelector("#city-input");
+search(cityInputElement.value);
+}
 
+function search (city) {
+let apiKey = "e4c991b27b566dc4b5b311b6f8d9ac5c";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayInfo);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+search("North pole");
