@@ -42,12 +42,16 @@ function displayInfo(response) {
 function displayFahrenheitTemp(event){
     event.preventDefault();
     let fahrenheitTemp = (celsiusTemp*9)/ 5+32;
+    celsiusLink.classList.remove("active");
+    fahrenheitLink.classList.add("active");
     let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
 function displaycelsiusTemp(event){
     event.preventDefault();
+    fahrenheitLink.classList.remove("active");
+    celsiusLink.classList.add("active");
     let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = Math.round(celsiusTemp);
     

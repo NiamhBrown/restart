@@ -38,3 +38,18 @@ text-decoration: underline;
 .main-info {
     padding-left: 0px;
 }
+
+.link:hover {
+    color: pink;
+}
+.active {
+    color: black;
+    cursor: default;
+    text-decoration: none;
+}
+
+.active:hover {
+    color: black;
+    cursor: default;
+    text-decoration: none;
+}
