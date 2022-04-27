@@ -1,55 +1,26 @@
 h1 {
-color: #80858A;
+    color: gray;
 }
+
 ul {
-    
-    padding-left: 0px;
-    margin: 0;
-}
-
-li {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    
 }
-li::first-letter {
-    text-transform: capitalize;
+.main-city{
+    padding: 0px;
 }
-
-.app-container {
-    border: 1px solid #80858A;
+.weather-app {
+    border: 1px solid black;
     border-radius: 10px;
-    margin: 30px auto;
-    padding: 30px;
     max-width: 600px;
-}
-
-.credit-link {
-    text-decoration: none;
-    color:pink;
+    margin: 100px auto 30px;
+    display: block;
+    
     
 }
-.credit-link:hover {
-color:pink;
-text-decoration: underline;
-}
 
-.main-info {
-    padding-left: 0px;
+.credit {
+    text-align: center;
 }
-
-.link:hover {
+.credit a {
     color: pink;
-}
-.active {
-    color: black;
-    cursor: default;
-    text-decoration: none;
-}
-
-.active:hover {
-    color: black;
-    cursor: default;
-    text-decoration: none;
 }
