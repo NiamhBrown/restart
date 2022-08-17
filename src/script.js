@@ -1,6 +1,6 @@
 function formatDate(timestamp) {
     let date = new Date(timestamp);
-    console.log(date);
+    
     let days = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let day = days[date.getDay()];
     let hour = date.getHours();
@@ -37,7 +37,19 @@ function displayInfo (response) {
     
 }
 
-let city= "Brighton"
+function search(city){
 let apiKey = "e4c991b27b566dc4b5b311b6f8d9ac5c";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayInfo);
+
+}
+function handleSubmit(event){
+    event.preventDefault();
+    let inputCityElement = document.querySelector("#city-input");
+    console.log(inputCityElement.value);
+    search(inputCityElement.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
