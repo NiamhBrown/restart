@@ -18,14 +18,14 @@ function formatDate(timestamp) {
 }
 
 function displayInfo (response) {
-   console.log(response);
-
+   
     let cityElement = document.querySelector("#city")
     let descriptionElement = document.querySelector("#description");
     let windElement = document.querySelector("#wind");
     let temperatureElement = document.querySelector("#temperature");
     let humidityElement = document.querySelector("#humidity");
     let dateElement = document.querySelector("#date")
+    
 
     cityElement.innerHTML = response.data.name;
     dateElement.innerHTML = formatDate (response.data.dt*1000);
@@ -33,7 +33,7 @@ function displayInfo (response) {
     windElement.innerHTML = Math.round(response.data.wind.speed);
     temperatureElement.innerHTML = Math.round(response.data.main.temp);
     humidityElement.innerHTML = Math.round(response.data.main.humidity);
-    
+  
     
 }
 
@@ -46,10 +46,11 @@ axios.get(apiUrl).then(displayInfo);
 function handleSubmit(event){
     event.preventDefault();
     let inputCityElement = document.querySelector("#city-input");
-    console.log(inputCityElement.value);
     search(inputCityElement.value);
 }
 
 let form = document.querySelector("#search-form");
-form.addEventListener('submit', handleSubmit);
+form.addEventListener("submit", handleSubmit);
+
+search("Brighton"); 
 
