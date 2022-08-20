@@ -5,6 +5,9 @@ h1 {
 ul {
     list-style: none;
 }
+a {
+    color: black;
+}
 
 .main-city{
     padding: 0px;
@@ -26,6 +29,18 @@ ul {
     color: pink;
 }
 
+.weather-temperature .active {
+    color: black;
+    text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+text-decoration: none;
+cursor: default;
+
+}
+
 #description {
     text-transform: capitalize;
 }
+
