@@ -26,11 +26,13 @@ function displayInfo (response) {
     let dateElement = document.querySelector("#date")
     let iconElement = document.querySelector("#icon")
 
+    celsiusTemp = response.data.main.temp
+
     cityElement.innerHTML = response.data.name;
     dateElement.innerHTML = formatDate (response.data.dt*1000);
     descriptionElement.innerHTML = response.data.weather[0].description;
     windElement.innerHTML = Math.round(response.data.wind.speed);
-    temperatureElement.innerHTML = Math.round(response.data.main.temp);
+    temperatureElement.innerHTML = Math.round(celsiusTemp);
     humidityElement.innerHTML = Math.round(response.data.main.humidity);
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     iconElement.setAttribute("alt", response.data.weather[0].description);
@@ -48,8 +50,29 @@ function handleSubmit(event){
     search(inputCityElement.value);
 }
 
+function displayFahrenheitTemp(event){
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#temperature");
+    temperatureElement.innerHTML = Math.round((celsiusTemp * 9/5) + 32);
+}
+
+function displayCelsiusTemp (event){
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#temperature");
+    temperatureElement.innerHTML = Math.round(celsiusTemp);
+
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let celsiusTemp = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("Brighton"); 
 
