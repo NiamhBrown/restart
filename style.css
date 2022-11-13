@@ -3,5 +3,32 @@ h1 {
 }
 
 .card{
-    background-color: blueviolet;
+    background-color: red;
 }
+
+.colors {
+    display: flex;
+    width: 6rem;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+.color1 {
+    background: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  
+  .color2 {
+    background: gray;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  
+  .color3 {
+    background: blue;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }

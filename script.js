@@ -1,5 +1,5 @@
 
-
+//this function displays all the information the user has inputted in the card
 function handleSubmit(){
 var name = document.getElementById('name').value;
 let cardTitle = document.querySelector("#cardTitle");
@@ -18,3 +18,21 @@ let cardDate = document.querySelector("#cardDate");
 cardDate.innerHTML = `${date}`;
 }
 
+//changes the background colour of the card when user clicks on coloured circles 
+
+const cardBackground = document.querySelector(".card")
+
+const color1Color = document.querySelector(".color1");
+color1Color.addEventListener("click", function () {
+    cardBackground.style.backgroundColor = "red";
+});
+
+const color2Color = document.querySelector(".color2");
+color2Color.addEventListener("click", function () {
+    cardBackground.style.backgroundColor = "grey";
+});
+
+const color3Color = document.querySelector(".color3");
+color3Color.addEventListener("click", function () {
+    cardBackground.style.backgroundColor = "blue";
+});
