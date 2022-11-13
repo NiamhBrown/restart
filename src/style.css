@@ -1,0 +1,46 @@
+h1 {
+    color: gray;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    color: black;
+}
+
+.main-city{
+    padding: 0px;
+}
+.weather-app {
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 100px auto 30px;
+    display: block;
+    
+    
+}
+
+.credit {
+    text-align: center;
+}
+.credit a {
+    color: pink;
+}
+
+.weather-temperature .active {
+    color: black;
+    text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+text-decoration: none;
+cursor: default;
+
+}
+
+#description {
+    text-transform: capitalize;
+}
+
