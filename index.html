@@ -10,12 +10,18 @@
 <body>
     <h1>CFG Challenge</h1>
    
-    Enter your name:<input type="text" placeholder="Enter your name" id="name">
-    <button onclick="displayName()">Submit</button>
+    Enter your name:<input type="text" placeholder="Name" autocomplete="off" id="name">
+    Reason for saving:<input type="text" placeholder="Travel/mortgage/family etc" autocomplete="off" id="reason">
+    Desired amount you'd like to save:<input type="text" placeholder="£50/£2,000" autocomplete="off" id="amount">
+    When would you like to save this by: <input type="text" placeholder="December 2024" autocomplete="off" id="date">
+    <button onclick="handleSubmit()">Submit</button>
    
 
     <div class="card">
-<h2 id="cardTitle"></h2>
+<h2 id="cardTitle">____ money goals</h2>
+<p>Reason for saving: <span id="cardReason">___</span></p>
+<p>Desired amount you'd like to save: <span id="cardAmount">___</span></p>
+<p>When would you like to save this by: <span id="cardDate">___</span></p>
     </div>
     <script src="script.js"></script>
 </body>
