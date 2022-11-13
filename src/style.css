@@ -1,46 +1,30 @@
-h1 {
-    color: gray;
-}
-
-ul {
-    list-style: none;
-}
-a {
-    color: black;
-}
-
-.main-city{
-    padding: 0px;
-}
-.weather-app {
-    border: 1px solid black;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 100px auto 30px;
-    display: block;
+.card{
+    background-color: red;
+    }
     
+    .colors {
+    display: flex;
+    width: 6rem;
+    justify-content: space-between;
+    cursor: pointer;
+    }
+    .color1 {
+    background: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    }
     
-}
-
-.credit {
-    text-align: center;
-}
-.credit a {
-    color: pink;
-}
-
-.weather-temperature .active {
-    color: black;
-    text-decoration: none;
-}
-
-.weather-temperature .active:hover {
-text-decoration: none;
-cursor: default;
-
-}
-
-#description {
-    text-transform: capitalize;
-}
-
+    .color2 {
+    background: gray;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    }
+    
+    .color3 {
+    background: blue;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    }
