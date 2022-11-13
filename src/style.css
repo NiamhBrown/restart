@@ -1,5 +1,11 @@
-.card{
+   body {
+    max-width: 800px;
+    padding: 15px;
+   }
+
+   .card{
     background-color: red;
+    width: 600px;
     }
     
     .colors {
