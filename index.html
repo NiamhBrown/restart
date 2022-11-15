@@ -11,16 +11,18 @@
     </head>
 <body>
     <h1>Phone background generator</h1>
-    <p>Need some motivation to help keep you on track to reach your saving goals? Fill in the form below to generate a presonalised card that you can screenshot and set as your phone background to keep you accountable!🤩 </p>
+    <p class="intro-para">Need some motivation to help keep you on track to reach your saving goals? Fill in the form below to generate a presonalised card that you can screenshot and set as your phone background to keep you accountable!🤩 </p>
    
-    
-    <div class="form-question">Your name: <input type="text" placeholder="Name" autocomplete="off" id="name"></div> 
-    <div class="form-question">Reason for saving: <input type="text" placeholder="e.g Travel" autocomplete="off" id="reason"></div>
-    <div class="form-question">Desired amount you'd like to save: <input type="text" placeholder="e.g £2,000" autocomplete="off" id="amount"></div>
-    <div class="form-question">When would you like to save this by: <input type="text" placeholder="e.g December 2024" autocomplete="off" id="date"></div>
-    <div><button onclick="handleSubmit()">Submit</button></div>
+    <div class="app-container">
+    <div class="row">
+    <div class="col-md-6">
+    <div class="form-question">Your name:</br><input type="text" placeholder="Name" autocomplete="off" id="name"></div> 
+    <div class="form-question">Reason for saving:</br><input type="text" placeholder="e.g Travel" autocomplete="off" id="reason"></div>
+    <div class="form-question">Desired amount you'd like to save:</br><input type="text" placeholder="e.g £2,000" autocomplete="off" id="amount"></div>
+    <div class="form-question">When would you like to save this by:</br><input type="text" placeholder="e.g December 2024" autocomplete="off" id="date"></div>
+    <div><button class="submit-button" onclick="handleSubmit()">Submit</button></div>
    
-
+<h3 class="mt-3">Time to style your card...</h3>
     <p>Choose a colour for your card:</p>
     <div class="colors">
         <span class="color1"></span>
@@ -34,13 +36,16 @@
          <button class="font2" type="button" onclick="font2Function()">money</button>
          <button class="font3" type="button" onclick="font3Function()">money</button>
       </div>
+    </div>
 
-    <div class="card">
+    <div class="card col-md-4">
 <h2 id="cardTitle">____ money goals</h2>
 <p id="cardFont1">Reason for saving: <span id="cardReason">___</span></p>
 <p id="cardFont2">Desired amount you'd like to save: <span id="cardAmount">___</span></p>
 <p id="cardFont3">When would you like to save this by: <span id="cardDate">___</span></p>
     </div>
+</div>
+</div>
     <script src="src/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
