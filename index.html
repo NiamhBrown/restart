@@ -12,11 +12,11 @@
     <p>Need some motivation to help keep you on track to reach your saving goals? Fill in the form below to generate a presonalised card that you can screenshot and set as your phone background to keep you accountable!🤩 </p>
    
     
-    Enter your name:<input type="text" placeholder="Name" autocomplete="off" id="name">
-    Reason for saving:<input type="text" placeholder="e.g Travel" autocomplete="off" id="reason">
-    Desired amount you'd like to save:<input type="text" placeholder="e.g £2,000" autocomplete="off" id="amount">
-    When would you like to save this by: <input type="text" placeholder="e.g December 2024" autocomplete="off" id="date">
-    <button onclick="handleSubmit()">Submit</button>
+    <div class="form-question">Your name: <input type="text" placeholder="Name" autocomplete="off" id="name"></div> 
+    <div class="form-question">Reason for saving: <input type="text" placeholder="e.g Travel" autocomplete="off" id="reason"></div>
+    <div class="form-question">Desired amount you'd like to save: <input type="text" placeholder="e.g £2,000" autocomplete="off" id="amount"></div>
+    <div class="form-question">When would you like to save this by: <input type="text" placeholder="e.g December 2024" autocomplete="off" id="date"></div>
+    <div><button onclick="handleSubmit()">Submit</button></div>
    
 
     <p>Choose a colour for your card:</p>
@@ -26,6 +26,12 @@
         <span class="color3"></span>
      </div>
 
+     <p>Choose a font for your card:</p>
+     <div class="fonts">
+         <span class="font1">money</span>
+         <span class="font2">money</span>
+         <span class="font3">money</span>
+      </div>
     <div class="card">
 <h2 id="cardTitle">____ money goals</h2>
 <p>Reason for saving: <span id="cardReason">___</span></p>

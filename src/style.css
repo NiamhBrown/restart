@@ -6,10 +6,15 @@
    h1 {
     color: pink;
    }
+   .form-question {
+      margin: 5px;
+   }
    .card{
     background-color: red;
-    width: 600px;
+    width: 400px;
+    height: 600px;
     padding: 5px;
+    border-radius: 10px;
     margin-top: 10px;
     text-align: center;
     }
@@ -40,3 +45,24 @@
     height: 25px;
     border-radius: 50%;
     }
+
+    .fonts {
+      display: flex;
+      width: 6rem;
+      justify-content: space-between;
+      cursor: pointer;
+      }
+      .font1, .font2, .font3{
+         margin: 3px;
+      }
+      .font1 {
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         
+      }
+      .font2 {
+         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         display: flex;
+      }
+      .font3 {
+         font-family: monospace;
+      }
