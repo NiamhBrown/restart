@@ -34,3 +34,25 @@ function handleSubmit(){
     color3Color.addEventListener("click", function () {
     cardBackground.style.backgroundColor = "blue";
     });
+
+    //changes font of card
+
+    function font1Function() {
+        document.getElementById("cardTitle").style.fontFamily = "Franklin Gothic Medium";
+        document.getElementById("cardFont1").style.fontFamily = "Franklin Gothic Medium";
+        document.getElementById("cardFont2").style.fontFamily = "Franklin Gothic Medium";
+        document.getElementById("cardFont3").style.fontFamily = "Franklin Gothic Medium";
+    }
+    function font2Function() {
+        document.getElementById("cardTitle").style.fontFamily = "Impact,Charcoal,sans-serif";
+        document.getElementById("cardFont1").style.fontFamily = "Impact,Charcoal,sans-serif";
+        document.getElementById("cardFont2").style.fontFamily = "Impact,Charcoal,sans-serif";
+        document.getElementById("cardFont3").style.fontFamily = "Impact,Charcoal,sans-serif";
+    }
+
+    function font3Function() {
+        document.getElementById("cardTitle").style.fontFamily = "monospace";
+        document.getElementById("cardFont1").style.fontFamily = "monospace";
+        document.getElementById("cardFont2").style.fontFamily = "monospace";
+        document.getElementById("cardFont3").style.fontFamily = "monospace";
+    }

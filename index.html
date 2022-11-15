@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>CFG Challenge💖</title>
+     
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
      <link rel="stylesheet" href="src/style.css">
-</head>
+    </head>
 <body>
     <h1>Phone background generator</h1>
     <p>Need some motivation to help keep you on track to reach your saving goals? Fill in the form below to generate a presonalised card that you can screenshot and set as your phone background to keep you accountable!🤩 </p>
@@ -28,18 +30,19 @@
 
      <p>Choose a font for your card:</p>
      <div class="fonts">
-         <span class="font1">money</span>
-         <span class="font2">money</span>
-         <span class="font3">money</span>
+         <button class="font1" type="button" onclick="font1Function()">money</button>
+         <button class="font2" type="button" onclick="font2Function()">money</button>
+         <button class="font3" type="button" onclick="font3Function()">money</button>
       </div>
+
     <div class="card">
 <h2 id="cardTitle">____ money goals</h2>
-<p>Reason for saving: <span id="cardReason">___</span></p>
-<p>Desired amount you'd like to save: <span id="cardAmount">___</span></p>
-<p>When would you like to save this by: <span id="cardDate">___</span></p>
-
-
+<p id="cardFont1">Reason for saving: <span id="cardReason">___</span></p>
+<p id="cardFont2">Desired amount you'd like to save: <span id="cardAmount">___</span></p>
+<p id="cardFont3">When would you like to save this by: <span id="cardDate">___</span></p>
     </div>
     <script src="src/script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
     
