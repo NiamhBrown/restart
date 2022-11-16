@@ -3,6 +3,7 @@
       margin: 50px auto;
       max-width: 1000px;
       font-family: "Montserrat", sans-serif;
+      background-color: #FAF9F6;
    }
    h1 {
     color: #3F51B5;
@@ -17,7 +18,7 @@
    }
    .intro-para{
       text-align: center;
-      background-color: #FAF9F6;
+      background-color: #FFFFFF;
       border-radius: 10px;
       padding: 10px;
 
@@ -48,12 +49,14 @@
     
     .emoji{
       font-size: 40px;
+      
     }
     .colors {
     display: flex;
     width: 6rem;
     justify-content: space-between;
     cursor: pointer;
+  
     }
     .color1 {
     background: #3F51B5;
