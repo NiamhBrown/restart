@@ -1,7 +1,7 @@
 function handleSubmit(){
     var name = document.getElementById('name').value;
-    let cardTitle = document.querySelector("#cardTitle");
-    cardTitle.innerHTML = `${name}'s saving goals`;
+    let cardName = document.querySelector("#cardName");
+    cardName.innerHTML = `${name}'s`;
     
     var reason = document.getElementById('reason').value;
     let cardReason = document.querySelector("#cardReason");

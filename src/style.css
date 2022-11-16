@@ -1,11 +1,15 @@
    body{
       display: block;
-      margin: 0 auto;
+      margin: 50px auto;
       max-width: 1000px;
+      font-family: "Montserrat", sans-serif;
    }
    h1 {
-    color: pink;
+    color: #3F51B5;
     text-align: center;
+   }
+   h2 {
+      font-size: 40px;
    }
    p {
       margin: 5px 0 5px 0;
@@ -25,13 +29,13 @@
    }
 
    .submit-button {
-      margin: 5px 0 5px 0;
+      margin: 5px;
+      background-color: #3F51B5;
    }
    .card{
-    background-color: bisque;
-      width: 400px;
+    width: 400px;
     height: 600px;
-    padding: 5px;
+    padding: 50px;
     border-radius: 10px;
     margin-top: 10px;
     text-align: center;
@@ -70,8 +74,10 @@
       justify-content: space-between;
       cursor: pointer;
       }
+
       .font1, .font2, .font3{
          margin: 3px;
+         padding: 5px 10px;
       }
       .font1 {
          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -83,4 +89,13 @@
       }
       .font3 {
          font-family: monospace;
+      }
+   .cardLabel {
+   margin: 20px;
+   }
+
+      .cardAnswer {
+         background-color: #f2d0cd; 
+         padding: 10px;
+         border-radius: 10px;
       }
