@@ -41,6 +41,9 @@
     text-align: center;
     }
     
+    .emoji{
+      font-size: 40px;
+    }
     .colors {
     display: flex;
     width: 6rem;
@@ -48,21 +51,21 @@
     cursor: pointer;
     }
     .color1 {
-    background: red;
+    background: #3F51B5;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     }
     
     .color2 {
-    background: gray;
+    background: #f237aa;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     }
     
     .color3 {
-    background: blue;
+    background: #32d355;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -78,9 +81,16 @@
       .font1, .font2, .font3{
          margin: 3px;
          padding: 5px 10px;
+         border-radius: 5px;
+         border: .5px #3F51B5 solid;
+      }
+      .emoji1, .emoji2, .emoji3 {
+         border-radius: 50px;
+         border: .5px #3F51B5 solid;
       }
       .font1 {
          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         
          
       }
       .font2 {
@@ -90,12 +100,17 @@
       .font3 {
          font-family: monospace;
       }
+
+
    .cardLabel {
    margin: 20px;
    }
 
       .cardAnswer {
-         background-color: #f2d0cd; 
+         background-color: #FAF9F6; 
          padding: 10px;
          border-radius: 10px;
+      }
+      .credits {
+         text-align: center;
       }

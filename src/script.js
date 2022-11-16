@@ -22,17 +22,17 @@ function handleSubmit(){
     
     const color1Color = document.querySelector(".color1");
     color1Color.addEventListener("click", function () {
-    cardBackground.style.backgroundColor = "red";
+    cardBackground.style.backgroundColor = "#3F51B5";
     });
     
     const color2Color = document.querySelector(".color2");
     color2Color.addEventListener("click", function () {
-    cardBackground.style.backgroundColor = "grey";
+    cardBackground.style.backgroundColor = "#f237aa";
     });
     
     const color3Color = document.querySelector(".color3");
     color3Color.addEventListener("click", function () {
-    cardBackground.style.backgroundColor = "blue";
+    cardBackground.style.backgroundColor = "#32d355";
     });
 
     //changes font of card
@@ -55,4 +55,15 @@ function handleSubmit(){
         document.getElementById("cardFont1").style.fontFamily = "monospace";
         document.getElementById("cardFont2").style.fontFamily = "monospace";
         document.getElementById("cardFont3").style.fontFamily = "monospace";
+    }
+
+    //change emoji
+    function emoji1Function() {
+        document.getElementById("emoji").innerHTML = "🤩";
+    }
+    function emoji2Function() {
+        document.getElementById("emoji").innerHTML = "💗";
+    }
+    function emoji3Function() {
+        document.getElementById("emoji").innerHTML = "🤑";
     }
